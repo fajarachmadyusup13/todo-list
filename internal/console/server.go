@@ -1,8 +1,7 @@
 package console
 
 import (
-	"CRUDWithCockroach/internal/db"
-
+	"github.com/fajarachmadyusup13/todo-list/internal/db"
 	"github.com/spf13/cobra"
 )
 

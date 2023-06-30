@@ -1,8 +1,6 @@
 package main
 
-import (
-	"CRUDWithCockroach/internal/console"
-)
+import "github.com/fajarachmadyusup13/todo-list/internal/console"
 
 func main() {
 	console.Execute()

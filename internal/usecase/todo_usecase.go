@@ -1,26 +1,27 @@
 package usecase
 
 import (
-	"CRUDWithCockroach/internal/model"
 	"context"
+
+	"github.com/fajarachmadyusup13/todo-list/internal/model"
 )
 
 type toDoUsecase struct {
 }
 
-func NewToDoUsecase() model.ToDoUsecase {
+func NewToDoUsecase() model.TodoUsecase {
 	return &toDoUsecase{}
 }
 
-func (t *toDoUsecase) Create(ctx context.Context, todo *model.ToDo) error {
+func (t *toDoUsecase) Create(ctx context.Context, todo *model.Todo) error {
 	return nil
 }
 
-func (t *toDoUsecase) FindByID(ctx context.Context, id int64) (res *model.ToDo, err error) {
+func (t *toDoUsecase) FindByID(ctx context.Context, id int64) (res *model.Todo, err error) {
 	return nil, nil
 }
 
-func (t *toDoUsecase) UpdateByID(ctx context.Context, todo *model.ToDo) (res *model.ToDo, err error) {
+func (t *toDoUsecase) UpdateByID(ctx context.Context, todo *model.Todo) (res *model.Todo, err error) {
 	return nil, nil
 }
 

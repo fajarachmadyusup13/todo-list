@@ -1,13 +1,12 @@
 package httpsvc
 
 import (
-	"CRUDWithCockroach/internal/model"
-
+	"github.com/fajarachmadyusup13/todo-list/internal/model"
 	"github.com/labstack/echo/v4"
 )
 
 type HTTPService struct {
-	todoUsecase model.ToDoUsecase
+	todoUsecase model.TodoUsecase
 }
 
 // NewHTTPService :nodoc:
@@ -25,6 +24,6 @@ func (h *HTTPService) InitRoutes(route *echo.Echo) {
 }
 
 // RegisterToDoUsecase :nodoc:
-func (h *HTTPService) RegisterToDoUsecase(t model.ToDoUsecase) {
+func (h *HTTPService) RegisterToDoUsecase(t model.TodoUsecase) {
 	h.todoUsecase = t
 }

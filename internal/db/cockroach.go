@@ -1,9 +1,9 @@
 package db
 
 import (
-	"CRUDWithCockroach/internal/config"
 	"time"
 
+	"github.com/fajarachmadyusup13/todo-list/internal/config"
 	"github.com/jpillora/backoff"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/driver/postgres"
